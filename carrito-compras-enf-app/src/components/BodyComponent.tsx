@@ -1,10 +1,16 @@
 import React from 'react'
-import { View } from 'react-native'
+import { Text, useWindowDimensions, View } from 'react-native'
+import { style } from '../theme/appTheme';
 
-export const BodyComponent = () => {
+export const BodyComponent = (props: any) => {
+  //hook useWindowDimension: tamaño de la pantalla
+  const {height} = useWindowDimensions();
   return (
-    <View>
-        
+    <View style={{
+      ...style.contentBody,
+      height: height * 0.88
+      }}>
+        {props.children}
     </View>
   )
 }

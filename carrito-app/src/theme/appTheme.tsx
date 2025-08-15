@@ -10,15 +10,7 @@ export const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         marginBottom: 20,
-        textAlign: 'center',
-        color: '#333'
-    },
-
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        padding: 20,
-        backgroundColor: '#D3D3D3'
+        textAlign: 'center',       
     },
 
     input: {
@@ -45,6 +37,38 @@ export const styles = StyleSheet.create({
         color: '#007BFF',
         textAlign: 'center'
     },
+    productItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#f5f5f5',
+    padding: 10,
+    marginBottom: 10,
+    borderRadius: 10
+  },
+  productImage: {
+    width: 60,
+    height: 60,
+    borderRadius: 8,
+    marginRight: 10
+  },
+  productInfo: {
+    flex: 1
+  },
+  productName: {
+    fontWeight: 'bold',
+    fontSize: 16
+  },
+  productPrice: {
+    color: '#333'
+  },
+  buyButton: {
+    backgroundColor: '#007BFF',
+    padding: 8,
+    borderRadius: 5
+  },
+  buyButtonText: {
+    color: '#fff'
+  }
 
 
 });

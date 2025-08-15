@@ -8,8 +8,8 @@ const Stack = createStackNavigator();
 export const StackNavigator =  () => {
     return (
     <Stack.Navigator>
-      <Stack.Screen name="Pantalla1" options={{title:'Registro de Usuario'}} component={Pantalla1Screen} />
-      <Stack.Screen name="Pantalla2" options={{title:'Inicio de sesión'}} component={Pantalla2Screen} />
+      <Stack.Screen name="Pantalla1" options={{headerShown: false}} component={Pantalla1Screen} />
+      <Stack.Screen name="Pantalla2" options={{headerShown: false}} component={Pantalla2Screen} />
       </Stack.Navigator>
   );
 };
