@@ -62,13 +62,14 @@ export const styles = StyleSheet.create({
     },
     // estilo productos
     contentCard: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         padding: 5,
         shadowColor: '#f0b191ff',
         borderColor: '#f0b191ff',
         borderWidth: 2,
         borderRadius: 7,
         marginBottom: 8,
+        backgroundColor: '#ffeae6'
 
         /*shadowOffset: {
             width: 0,
@@ -81,23 +82,24 @@ export const styles = StyleSheet.create({
     contentText: {
         flex: 1,
         marginLeft: 10,
-        flexDirection: 'row',
+        
         alignItems: 'center'
     },
     titleCard: {
         fontWeight: 'bold',
         color: '#f56817ff',
-        fontSize: 13
+        fontSize: 15
     },
     imageCard: {
-        width: 60,
-        height: 60
+        width: 80,
+        height: 80,
+        
     },
     //estilo icono carrito
     iconCard: {
         flex: 1,
         alignItems: 'flex-end',
-        marginLeft: 22,
+        marginLeft: 25,
 
     },
     contentPrincipal: {
@@ -208,7 +210,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     textInformation:{
-        marginHorizontal: 16,
+        marginHorizontal: 14,
         fontWeight: 'bold',
         color: '#f56817ff'
     },
