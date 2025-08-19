@@ -5,6 +5,7 @@ import { RegisterScreen } from '../screens/RegisterScreen';
 import { useState } from 'react';
 import { HomeScreen } from '../screens/HomeScreen/HomeScreen';
 
+
 //interface - arreglo usuario
 export interface User {
     id: number;
@@ -15,8 +16,8 @@ const Stack = createStackNavigator();
 export const StackNavigator = () => {
     // arreglo de usuarios para el inicio de sesión
     const users: User[] = [
-        { id: 1, name: 'Silvana Noa', password: 'abcd' },
-        { id: 2, name: 'Juan Egas', password: 'defg' },
+        { id: 1, name: 'Silvanita', password: '1234' },
+        { id: 2, name: 'Juanca', password: 'abcd' },
     ];
 
     //hook use state: manipulación del arreglo con la lista de usuarios

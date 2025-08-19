@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-import { Alert, StatusBar, Text, View } from 'react-native'
-import { PRIMARY_COLOR } from '../commons/constants'
-import { TitleComponent } from '../components/TitleComponent'
-import { BodyComponent } from '../components/BodyComponent'
-import { styles } from '../theme/appTheme'
-import { InputComponent } from '../components/ImputComponent'
-import { Buttoncomponent } from '../components/Buttoncomponent'
-import { TouchableOpacity } from 'react-native'
-import { CommonActions, useNavigation } from '@react-navigation/native'
+import React, { useState } from 'react';
+import { Alert, StatusBar, Text, View } from 'react-native';
+import { PRIMARY_COLOR } from '../commons/constants';
+import { TitleComponent } from '../components/TitleComponent';
+import { BodyComponent } from '../components/BodyComponent';
+import { styles } from '../theme/appTheme';
+import { InputComponent } from '../components/ImputComponent';
+import { Buttoncomponent } from '../components/Buttoncomponent';
+import { TouchableOpacity } from 'react-native';
+import { CommonActions, useNavigation } from '@react-navigation/native';
 import { User } from '../navigator/StackNavigator';
-import { get } from 'react-native/Libraries/TurboModule/TurboModuleRegistry'
+
 //interface - props
 interface Props {
   users: User[]; // arreglo con la lista de usuarios
@@ -93,7 +93,8 @@ export const RegisterScreen = ({ users, handleAddUser }: Props) => {
       <TitleComponent title='Registro de Usuario' />
       <BodyComponent>
         <View>
-          <Text style={styles.titleBody}>Registrate</Text>
+          <Text style={styles.titleBody}>¡No esperes más!</Text>
+          <Text style={styles.descriptionBody}>Crea tu cuenta y disfruta de envíos gratis</Text>
         </View>
         <View style={styles.contentInputs}>
           <InputComponent

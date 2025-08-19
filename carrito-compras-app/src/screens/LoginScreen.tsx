@@ -72,8 +72,8 @@ export const LoginScreen = ({ users }: Props) => {
       <TitleComponent title='Iniciar Sesión' />
       <BodyComponent>
         <View>
-          <Text style={styles.titleBody}>Iniciar Sesión</Text>
-          <Text style={styles.descriptionBody}>Realiza tus compras</Text>
+          <Text style={styles.titleBody}>¡Compra con confianza!</Text>
+          <Text style={styles.descriptionBody}>Tu satisfacción es nuestra prioridad</Text>
         </View>
         <View style={styles.contentInputs}>
           <InputComponent
@@ -94,7 +94,7 @@ export const LoginScreen = ({ users }: Props) => {
           onPress={() => navigation.dispatch(CommonActions.navigate({ name: 'Register' }))}>
           <Text
             style={styles.textEnlace}>
-            ¿No tienes cuenta? Registrate
+            ¿No tienes cuenta? Regístrate
           </Text>
         </TouchableOpacity>
       </BodyComponent>
